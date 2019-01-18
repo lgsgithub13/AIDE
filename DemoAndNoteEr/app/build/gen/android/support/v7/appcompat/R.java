@@ -1884,8 +1884,8 @@ containing a value of this type.
         public static final int ifRoom=0x7f0a001f;
         public static final int image=0x7f0a0029;
         public static final int info=0x7f0a0066;
-        public static final int item1=0x7f0a0072;
-        public static final int item2=0x7f0a0073;
+        public static final int item1=0x7f0a0073;
+        public static final int item2=0x7f0a0074;
         public static final int line1=0x7f0a006b;
         public static final int line3=0x7f0a006d;
         public static final int listMode=0x7f0a0009;
@@ -1951,6 +1951,7 @@ containing a value of this type.
         public static final int useLogo=0x7f0a0012;
         public static final int withText=0x7f0a0021;
         public static final int wrap_content=0x7f0a0019;
+        public static final int xfcserviceButton1=0x7f0a0072;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0b0000;
@@ -2008,6 +2009,7 @@ containing a value of this type.
         public static final int select_dialog_singlechoice_material=0x7f03002e;
         public static final int simple_xfc_activity=0x7f03002f;
         public static final int support_simple_spinner_dropdown_item=0x7f030030;
+        public static final int xfc_service=0x7f030031;
     }
     public static final class menu {
         public static final int main_menu=0x7f0c0000;
@@ -2045,12 +2047,17 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f050011;
         public static final int abc_toolbar_collapse_description=0x7f050012;
         public static final int app_name=0x7f050021;
-        public static final int main_activity_1=0x7f050024;
-        public static final int main_activity_2=0x7f050025;
+        public static final int main_1=0x7f050024;
+        public static final int main_2=0x7f050025;
+        public static final int main_activity_1=0x7f050029;
+        public static final int main_activity_2=0x7f05002a;
         public static final int main_menu_1=0x7f050022;
         public static final int main_menu_2=0x7f050023;
         public static final int search_menu_title=0x7f050013;
+        public static final int simple_xfc_activity_1=0x7f050027;
+        public static final int simple_xfc_activity_2=0x7f050028;
         public static final int status_bar_notification_info_overflow=0x7f050014;
+        public static final int xfc_service_1=0x7f050026;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f07009f;

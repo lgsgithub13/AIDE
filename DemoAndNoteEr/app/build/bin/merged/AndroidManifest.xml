@@ -8,6 +8,8 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="21" />
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <meta-data
         android:name="android.support.VERSION"
         android:value="25.3.1" />
@@ -35,6 +37,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="demo.and.note.er.XFCService"
+            android:label="悬浮窗服务" />
     </application>
 
 </manifest>

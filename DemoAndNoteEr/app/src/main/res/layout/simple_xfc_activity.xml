@@ -9,13 +9,13 @@
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
-		android:text="打开悬浮窗"
+		android:text="@string/simple_xfc_activity_1"
 		android:id="@+id/simplexfcactivityButton1"/>
 
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
-		android:text="关闭悬浮窗"
+		android:text="@string/simple_xfc_activity_2"
 		android:id="@+id/simplexfcactivityButton2"/>
 
 </LinearLayout>

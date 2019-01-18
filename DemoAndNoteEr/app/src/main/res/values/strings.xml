@@ -3,6 +3,11 @@
     <string name="app_name">DemoAndNoteEr</string>
     <string name="main_menu_1">关于</string>
 	<string name="main_menu_2">设置</string>
+	<string name="main_1">打开演示笔记</string>
+	<string name="main_2">使用教程说明</string>
+	<string name="xfc_service_1">获取当前时间</string>
+	<string name="simple_xfc_activity_1">打开悬浮窗</string>
+	<string name="simple_xfc_activity_2">关闭悬浮窗</string>
     <string name="main_activity_1">QQ：3377017440</string>
 	<string name="main_activity_2">尚未完善</string>
 </resources>
