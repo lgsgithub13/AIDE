@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">DemoAndNoteEr</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="main_menu_1">关于</string>
+	<string name="main_menu_2">设置</string>
+    <string name="main_activity_1">QQ：3377017440</string>
+	<string name="main_activity_2">尚未完善</string>
 </resources>
