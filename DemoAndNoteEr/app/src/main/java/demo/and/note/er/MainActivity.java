@@ -1,18 +1,24 @@
 package demo.and.note.er;
 
 import android.app.*;
+import android.content.*;
 import android.os.*;
 import android.view.*;
 import android.widget.*;
 
-public class MainActivity extends Activity 
+public class MainActivity extends Activity implements View.OnClickListener
 {
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-    }
+	@Override
+	public void onCreate(Bundle savedInstanceState)
+	{
+		setContentView(R.layout.main);
+		super.onCreate(savedInstanceState);
+		Button b1,b2;
+		b1=(Button)findViewById(R.id.mainButton1);
+		b2=(Button)findViewById(R.id.mainButton2);
+		b1.setOnClickListener(this);
+		b2.setOnClickListener(this);
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
@@ -36,5 +42,18 @@ public class MainActivity extends Activity
 				return true;
 		}
 		return true;
+	}
+	@Override
+	public void onClick(View p1)
+	{
+		switch(p1.getId())
+		{
+			case R.id.mainButton1:
+				Intent i=new Intent(MainActivity.this,DaKaiYanShiBiJiAc.class);
+				startActivity(i);
+				break;
+			case R.id.mainButton2:
+				break;
+		}
 	}
 }

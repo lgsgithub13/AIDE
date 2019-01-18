@@ -16,6 +16,16 @@
 		android:theme="@style/AppTheme">
 
 		<activity
+			android:name=".SimpleXFCActivity"
+			android:label="SimpleXFCActivity类的布局"
+			android:launchMode="singleTask"/>
+
+		<activity
+			android:name=".DaKaiYanShiBiJiAc"
+			android:label="DaKaiYanShiBiJi类的布局"
+			android:launchMode="singleTask"/>
+
+		<activity
 			android:name=".MainActivity"
 			android:label="@string/app_name"
 			android:launchMode="singleTask">
