@@ -19,6 +19,7 @@ public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemCli
 		ArrayAdapter<String> adapter=new ArrayAdapter<String>(DaKaiYanShiBiJiAc.this,android.R.layout.simple_list_item_1,list);
 		lv.setAdapter(adapter);
 		lv.setOnItemClickListener(this);
+		list.add("应用包安装管理器MiNi-190119");
 		list.add("一个简单的悬浮窗-190118");
 	}
 	@Override
@@ -29,6 +30,10 @@ public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemCli
 			case "一个简单的悬浮窗-190118":
 				Intent i=new Intent(DaKaiYanShiBiJiAc.this,SimpleXFCActivity.class);
 				startActivity(i);
+				break;
+			case "应用包安装管理器MiNi-190119":
+				Intent ii=new Intent(DaKaiYanShiBiJiAc.this,YingYongBaoGuanLiQiAc.class);
+				startActivity(ii);
 				break;
 		}
 	}

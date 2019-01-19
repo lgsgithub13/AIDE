@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center|center_vertical|center_horizontal">
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="APK选择器(简单文件浏览器)"
+		android:id="@+id/yingyongbaoguanliqiButton1"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="静默安装(ROOT安装)"
+		android:id="@+id/yingyongbaoguanliqiButton2"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="开启辅助安装服务"
+		android:id="@+id/yingyongbaoguanliqiButton3"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="辅助安装"
+		android:id="@+id/yingyongbaoguanliqiButton4"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:text="APK文件路径显示区"
+		android:id="@+id/yingyongbaoguanliqiTextView1"/>
+
+</LinearLayout>
+

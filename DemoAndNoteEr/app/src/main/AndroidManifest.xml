@@ -6,6 +6,8 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+		<activity android:name=".ApkSelectErAc"android:label="ApkSelectErAc类的布局"android:launchMode="singleTask"/>
+		<activity android:name=".YingYongBaoGuanLiQiAc"android:label="YingYongBaoGuanLiQi类的布局"android:launchMode="singleTask"/>
 		<activity android:name=".SimpleXFCActivity"android:label="SimpleXFCActivity类的布局"android:launchMode="singleTask"/>
 		<activity android:name=".DaKaiYanShiBiJiAc"android:label="DaKaiYanShiBiJi类的布局"android:launchMode="singleTask"/>
         <activity
@@ -20,4 +22,5 @@
 		<service android:name=".XFCService"android:label="悬浮窗服务"/>
     </application>
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 </manifest>

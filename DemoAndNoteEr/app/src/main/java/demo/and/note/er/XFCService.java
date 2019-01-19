@@ -49,7 +49,7 @@ public class XFCService extends Service
 			public void onClick(View v)
 			{
 				//获取当前时间
-				SimpleDateFormat sdf=new SimpleDateFormat("yy年mm月dd日→hh:mm:ss");
+				SimpleDateFormat sdf=new SimpleDateFormat("yy年MM月dd日→HH:mm:ss");
 				Date date=new Date(System.currentTimeMillis());
 				String chiShi=sdf.format(date);
 				//复制当前时间到剪切板

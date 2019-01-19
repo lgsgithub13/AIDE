@@ -16,6 +16,16 @@
 		android:theme="@style/AppTheme">
 
 		<activity
+			android:name=".ApkSelectErAc"
+			android:label="ApkSelectErAc类的布局"
+			android:launchMode="singleTask"/>
+
+		<activity
+			android:name=".YingYongBaoGuanLiQiAc"
+			android:label="YingYongBaoGuanLiQi类的布局"
+			android:launchMode="singleTask"/>
+
+		<activity
 			android:name=".SimpleXFCActivity"
 			android:label="SimpleXFCActivity类的布局"
 			android:launchMode="singleTask"/>
@@ -50,6 +60,9 @@
 
 	<uses-permission
 		android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+	<uses-permission
+		android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
 </manifest>
 
