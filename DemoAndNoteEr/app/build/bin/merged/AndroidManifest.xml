@@ -48,6 +48,18 @@
         </activity>
 
         <service
+            android:name="demo.and.note.er.FuZhuInstaller"
+            android:label="DemoAndNoteEr辅助安装服务"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/fu_zhu_installer_description" />
+        </service>
+        <service
             android:name="demo.and.note.er.XFCService"
             android:label="悬浮窗服务" />
     </application>
