@@ -20,16 +20,18 @@ public class ApkSelectErAc extends Activity implements AdapterView.OnItemClickLi
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.apk_select_er);
 		ListView lv=(ListView)findViewById(R.id.apkselecterListView1);
+		//适配器
 		adapter=new SimpleAdapter
 		(
-		ApkSelectErAc.this
-		,list
-		,R.layout.list_item_of_apk_select_er
-		,new String[]{"filePic","fileName"}
-		,new int[]{R.id.listitemofapkselecterImageView1,R.id.listitemofapkselecterTextView1}
+			ApkSelectErAc.this
+			,list
+			,R.layout.list_item_of_apk_select_er
+			,new String[]{"filePic","fileName"}
+			,new int[]{R.id.listitemofapkselecterImageView1,R.id.listitemofapkselecterTextView1}
 		);
 		lv.setAdapter(adapter);
 		lv.setOnItemClickListener(this);
+		//更新文件列表
 		onListUpDate(MuQianLuJin);
 	}
 	private void onListUpDate(String path)
@@ -63,6 +65,7 @@ public class ApkSelectErAc extends Activity implements AdapterView.OnItemClickLi
 	{
 		MuQianLuJin=(String)list.get(p3).get("PATH KEY");
 		File file=new File(MuQianLuJin);
+		//判断点击的是目录还是文件
 		if(file.isDirectory())
 		{
 			onListUpDate(MuQianLuJin);
@@ -72,6 +75,7 @@ public class ApkSelectErAc extends Activity implements AdapterView.OnItemClickLi
 			String wenJianLuJin=file.getPath();
 			String[] wenJianLuJinArray=wenJianLuJin.split("\\.");
 			int len=wenJianLuJinArray.length;
+			//筛选文件后缀为apk的文件
 			if("apk".equalsIgnoreCase(wenJianLuJinArray[len-1]))
 			{
 			    Intent i=new Intent();
@@ -88,6 +92,7 @@ public class ApkSelectErAc extends Activity implements AdapterView.OnItemClickLi
 			}
 		}
 	}
+	//判断点击返回键所在目录
 	@Override
 	public void onBackPressed()
 	{

@@ -5,6 +5,11 @@
 	<string name="main_menu_2">设置</string>
 	<string name="main_1">打开演示笔记</string>
 	<string name="main_2">使用教程说明</string>
+	<string name="ying_yong_bao_guan_li_qi_1">APK选择器(简单文件浏览器)</string>
+	<string name="ying_yong_bao_guan_li_qi_2">静默安装(ROOT安装)</string>
+	<string name="ying_yong_bao_guan_li_qi_3">开启辅助安装服务</string>
+	<string name="ying_yong_bao_guan_li_qi_4">辅助安装</string>
+	<string name="ying_yong_bao_guan_li_qi_5">APK文件路径显示区</string>
 	<string name="xfc_service_1">获取当前时间</string>
 	<string name="simple_xfc_activity_1">打开悬浮窗</string>
 	<string name="simple_xfc_activity_2">关闭悬浮窗</string>

@@ -49,12 +49,16 @@ public class XFCService extends Service
 			public void onClick(View v)
 			{
 				//获取当前时间
-				SimpleDateFormat sdf=new SimpleDateFormat("yy年MM月dd日→HH:mm:ss");
+				SimpleDateFormat sdf=new SimpleDateFormat("yy年MM月ˇdd号、HH:mm:ss");
 				Date date=new Date(System.currentTimeMillis());
 				String chiShi=sdf.format(date);
+				String[] s=(chiShi.trim()).split("、");
+				String ss=s[0];
+				String[] sss=ss.split("ˇ");
+				String ssss=sss[1];
 				//复制当前时间到剪切板
 				ClipboardManager cm=(ClipboardManager)getApplication().getSystemService(getApplication().CLIPBOARD_SERVICE);
-				cm.setText(chiShi.trim());
+				cm.setText("此时:"+ssss+"?☀"+s[1]+"🌙"+sss[0]);
 				Toast.makeText(getApplication(),"当前时间为："+"\n"+chiShi+"\n"+"当前时间已复制到剪切板",Toast.LENGTH_LONG).show();
 			}
 		});
