@@ -36,6 +36,7 @@ public class ApkSelectErAc extends Activity implements AdapterView.OnItemClickLi
 	}
 	private void onListUpDate(String path)
 	{
+		//形参、实参:MuQianLuJin、path
 		setTitle(MuQianLuJin);
 		list.clear();
 		File[] file=new File(path).listFiles();
@@ -63,6 +64,8 @@ public class ApkSelectErAc extends Activity implements AdapterView.OnItemClickLi
 	@Override
 	public void onItemClick(AdapterView<?> p1, View p2, int p3, long p4)
 	{
+		/*String MuQianLuJin=(String)list.get(p3).get("PATH KEY");
+		、加了String申明后，会对返回键判断是否是根路径有影响。*/
 		MuQianLuJin=(String)list.get(p3).get("PATH KEY");
 		File file=new File(MuQianLuJin);
 		//判断点击的是目录还是文件
