@@ -2061,6 +2061,7 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f060011;
         public static final int abc_toolbar_collapse_description=0x7f060012;
         public static final int app_name=0x7f060021;
+        public static final int da_kai_yan_shi_bi_ji=0x7f060031;
         public static final int fu_zhu_installer_description=0x7f060030;
         public static final int main_1=0x7f060024;
         public static final int main_2=0x7f060025;
