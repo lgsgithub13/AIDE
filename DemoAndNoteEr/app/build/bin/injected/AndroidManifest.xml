@@ -16,6 +16,11 @@
 		android:theme="@style/AppTheme">
 
 		<activity
+			android:name=".ServerRequestAc"
+			android:label="ServerRequestAc类的布局"
+			android:launchMode="singleTask"/>
+
+		<activity
 			android:name=".NotificationContentAc"
 			android:label="NotificationContentAc类的布局"
 			android:launchMode="singleTask"/>
@@ -86,6 +91,9 @@
 
 	<uses-permission
 		android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+	<uses-permission
+		android:name="android.permission.INTERNET"/>
 
 </manifest>
 

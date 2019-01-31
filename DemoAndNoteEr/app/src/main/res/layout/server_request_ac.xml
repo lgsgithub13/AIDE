@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center|center_vertical|center_horizontal">
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="使用WebView控件"
+		android:id="@+id/serverrequestacButton1"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="HUC(httpurlconnection)"
+		android:id="@+id/serverrequestacButton2"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="ohc(okhttpclient)"
+		android:id="@+id/serverrequestacButton3"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="清空显示区内容"
+		android:id="@+id/serverrequestacButton4"/>
+
+	<ScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="服务器返回数据显示区"
+			android:id="@+id/serverrequestacTextView1"
+			android:textColor="#FFF000"/>
+
+	</ScrollView>
+
+</LinearLayout>
+

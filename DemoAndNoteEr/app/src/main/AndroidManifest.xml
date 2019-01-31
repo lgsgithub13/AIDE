@@ -6,6 +6,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+		<activity android:name=".ServerRequestAc"android:label="ServerRequestAc类的布局"android:launchMode="singleTask"/>
 		<activity android:name=".NotificationContentAc"android:label="NotificationContentAc类的布局"android:launchMode="singleTask"/>
 		<activity android:name=".ApkSelectErAc"android:label="ApkSelectErAc类的布局"android:launchMode="singleTask"/>
 		<activity android:name=".YingYongBaoGuanLiQiAc"android:label="YingYongBaoGuanLiQi类的布局"android:launchMode="singleTask"/>
@@ -35,4 +36,5 @@
     </application>
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

@@ -1888,8 +1888,8 @@ containing a value of this type.
         public static final int ifRoom=0x7f0b001f;
         public static final int image=0x7f0b0029;
         public static final int info=0x7f0b006a;
-        public static final int item1=0x7f0b007c;
-        public static final int item2=0x7f0b007d;
+        public static final int item1=0x7f0b0081;
+        public static final int item2=0x7f0b0082;
         public static final int line1=0x7f0b006f;
         public static final int line3=0x7f0b0071;
         public static final int listMode=0x7f0b0009;
@@ -1929,12 +1929,17 @@ containing a value of this type.
         public static final int search_src_text=0x7f0b0050;
         public static final int search_voice_btn=0x7f0b0054;
         public static final int select_dialog_listview=0x7f0b0055;
+        public static final int serverrequestacButton1=0x7f0b0074;
+        public static final int serverrequestacButton2=0x7f0b0075;
+        public static final int serverrequestacButton3=0x7f0b0076;
+        public static final int serverrequestacButton4=0x7f0b0077;
+        public static final int serverrequestacTextView1=0x7f0b0078;
         public static final int shortcut=0x7f0b003f;
         public static final int showCustom=0x7f0b000f;
         public static final int showHome=0x7f0b0010;
         public static final int showTitle=0x7f0b0011;
-        public static final int simplexfcactivityButton1=0x7f0b0074;
-        public static final int simplexfcactivityButton2=0x7f0b0075;
+        public static final int simplexfcactivityButton1=0x7f0b0079;
+        public static final int simplexfcactivityButton2=0x7f0b007a;
         public static final int spacer=0x7f0b002f;
         public static final int split_action_bar=0x7f0b0007;
         public static final int src_atop=0x7f0b0016;
@@ -1958,12 +1963,12 @@ containing a value of this type.
         public static final int useLogo=0x7f0b0012;
         public static final int withText=0x7f0b0021;
         public static final int wrap_content=0x7f0b0019;
-        public static final int xfcserviceButton1=0x7f0b0076;
-        public static final int yingyongbaoguanliqiButton1=0x7f0b0077;
-        public static final int yingyongbaoguanliqiButton2=0x7f0b0078;
-        public static final int yingyongbaoguanliqiButton3=0x7f0b0079;
-        public static final int yingyongbaoguanliqiButton4=0x7f0b007a;
-        public static final int yingyongbaoguanliqiTextView1=0x7f0b007b;
+        public static final int xfcserviceButton1=0x7f0b007b;
+        public static final int yingyongbaoguanliqiButton1=0x7f0b007c;
+        public static final int yingyongbaoguanliqiButton2=0x7f0b007d;
+        public static final int yingyongbaoguanliqiButton3=0x7f0b007e;
+        public static final int yingyongbaoguanliqiButton4=0x7f0b007f;
+        public static final int yingyongbaoguanliqiTextView1=0x7f0b0080;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0c0000;
@@ -2022,10 +2027,11 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f03002f;
         public static final int select_dialog_multichoice_material=0x7f030030;
         public static final int select_dialog_singlechoice_material=0x7f030031;
-        public static final int simple_xfc_activity=0x7f030032;
-        public static final int support_simple_spinner_dropdown_item=0x7f030033;
-        public static final int xfc_service=0x7f030034;
-        public static final int ying_yong_bao_guan_li_qi=0x7f030035;
+        public static final int server_request_ac=0x7f030032;
+        public static final int simple_xfc_activity=0x7f030033;
+        public static final int support_simple_spinner_dropdown_item=0x7f030034;
+        public static final int xfc_service=0x7f030035;
+        public static final int ying_yong_bao_guan_li_qi=0x7f030036;
     }
     public static final class menu {
         public static final int main_menu=0x7f0d0000;

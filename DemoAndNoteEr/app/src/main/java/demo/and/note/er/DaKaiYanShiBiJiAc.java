@@ -27,6 +27,7 @@ public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemCli
 		list.add("一个简单的悬浮窗-190118");
 		list.add("一个简单的数据库-190129");
 		list.add("通知栏示例演示-190131");
+		list.add("向服务器请求数据方式-190131");
 	}
 	@Override
 	public void onItemClick(AdapterView<?> p1, View p2, int p3, long p4)
@@ -50,6 +51,10 @@ public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemCli
 				break;
 			case "通知栏示例演示-190131":
 				showNotify();
+				break;
+			case "向服务器请求数据方式-190131":
+				Intent iii=new Intent(DaKaiYanShiBiJiAc.this,ServerRequestAc.class);
+				startActivity(iii);
 				break;
 		}
 	}
