@@ -16,6 +16,11 @@
 		android:theme="@style/AppTheme">
 
 		<activity
+			android:name=".NotificationContentAc"
+			android:label="NotificationContentAc类的布局"
+			android:launchMode="singleTask"/>
+
+		<activity
 			android:name=".ApkSelectErAc"
 			android:label="ApkSelectErAc类的布局"
 			android:launchMode="singleTask"/>

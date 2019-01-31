@@ -17,4 +17,6 @@
 	<string name="main_activity_2">尚未完善</string>
 	<string name="fu_zhu_installer_description">用于辅助安装</string>
 	<string name="da_kai_yan_shi_bi_ji">相关数据库已生成在"/data/data/demo.and.note.er/databases/"目录下</string>
+	<string name="notification_content_ac_1">显示的具体通知内容</string>
+	<string name="notification_content_ac_2">关闭通知</string>
 </resources>

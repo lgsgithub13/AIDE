@@ -2,11 +2,14 @@ package demo.and.note.er;
 
 import android.app.*;
 import android.content.*;
+import android.graphics.*;
 import android.os.*;
-import android.util.*;
+import android.support.v7.app.*;
 import android.view.*;
 import android.widget.*;
 import java.util.*;
+
+import android.support.v7.appcompat.R;
 
 public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemClickListener
 {
@@ -23,6 +26,7 @@ public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemCli
 		list.add("应用包安装管理器MiNi-190119");
 		list.add("一个简单的悬浮窗-190118");
 		list.add("一个简单的数据库-190129");
+		list.add("通知栏示例演示-190131");
 	}
 	@Override
 	public void onItemClick(AdapterView<?> p1, View p2, int p3, long p4)
@@ -44,6 +48,25 @@ public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemCli
 				sdb.getWritableDatabase();
 				Toast.makeText(DaKaiYanShiBiJiAc.this,R.string.da_kai_yan_shi_bi_ji,Toast.LENGTH_LONG).show();
 				break;
+			case "通知栏示例演示-190131":
+				showNotify();
+				break;
 		}
+	}
+	//显示通知栏通知
+	protected void showNotify()
+	{
+		//通知意图PendingIntent(不是Pading)
+		Intent i=new Intent(DaKaiYanShiBiJiAc.this,NotificationContentAc.class);
+		PendingIntent pi=PendingIntent.getActivity(DaKaiYanShiBiJiAc.this,1,i,1);
+		NotificationManager nm=(NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+		Notification nn=new Notification.Builder(DaKaiYanShiBiJiAc.this)
+		//setSmallcon必须有、、、
+		.setSmallIcon(R.drawable.unknown)
+		.setContentIntent(pi)
+		.setContentTitle("通知标题")
+		.setContentText("通知内容")
+		.build();
+		nm.notify(1,nn);
 	}
 }
