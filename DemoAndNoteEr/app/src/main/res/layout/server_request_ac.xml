@@ -6,6 +6,20 @@
 	android:orientation="vertical"
 	android:gravity="center|center_vertical|center_horizontal">
 
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:ems="10"
+		android:id="@+id/serverrequestacEditText1"
+		android:hint="在此处输入测试网址"/>
+
+	<Button
+		style="?android:attr/buttonStyleSmall"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="确认测试网址"
+		android:id="@+id/serverrequestacButton"/>
+
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"

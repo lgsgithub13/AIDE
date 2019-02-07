@@ -16,6 +16,11 @@
 		android:theme="@style/AppTheme">
 
 		<activity
+			android:name=".WebViewDemoAc"
+			android:label="WebViewDemoAc类的布局"
+			android:launchMode="singleTask"/>
+
+		<activity
 			android:name=".ServerRequestAc"
 			android:label="ServerRequestAc类的布局"
 			android:launchMode="singleTask"/>
