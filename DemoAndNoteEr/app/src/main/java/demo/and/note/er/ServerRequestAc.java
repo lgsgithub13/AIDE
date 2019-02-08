@@ -6,7 +6,8 @@ import android.view.*;
 import android.widget.*;
 import java.io.*;
 import okhttp3.*;
-
+import java.net.*;
+//记得开启线程和异常处理
 public class ServerRequestAc extends Activity implements View.OnClickListener
 {
 	TextView tv;
@@ -43,10 +44,10 @@ public class ServerRequestAc extends Activity implements View.OnClickListener
 				startActivity(i);
 				break;
 			case R.id.serverrequestacButton2:
+				requestWithHUC(url);
 				break;
 			case R.id.serverrequestacButton3:
-				try{useOkHttpClient(url);}
-				catch (IOException e){e.printStackTrace();}
+				useOkHttpClient(url);
 				break;
 			case R.id.serverrequestacButton4:
 				tv.setText(" ");
@@ -57,15 +58,67 @@ public class ServerRequestAc extends Activity implements View.OnClickListener
 				break;
 		}
 	}
-	protected void useOkHttpClient(String url) throws IOException
+	private void requestWithHUC(final String url)
 	{
-		OkHttpClient ohc=new OkHttpClient();
-		Request request=new Request.Builder()
-			.url(url)
-			.build();
-		Response response=ohc.newCall(request).execute();
-		String shuju=response.body().string();
-		upDateTextView(shuju);
+		new Thread(new Runnable()
+		{
+			@Override
+			public void run()
+			{
+				HttpURLConnection huc=null;
+				BufferedReader br=null;
+				InputStream is=null;
+				try
+				{
+					//不是Url
+					URL urls=new URL(url);
+					huc=(HttpURLConnection)urls.openConnection();
+					huc.setRequestMethod("GET");
+					huc.setReadTimeout(3000);
+					huc.setConnectTimeout(3000);
+					is=huc.getInputStream();
+					br=new BufferedReader(new InputStreamReader(is));
+					StringBuilder sb=new StringBuilder();
+					String line;
+					while((line=br.readLine())!=null)
+					{
+						sb.append(line);
+					}
+					upDateTextView(sb.toString());
+				}
+				catch(Exception e){e.printStackTrace();}
+				finally
+				{
+					if(br!=null)
+					{
+						try{br.close();}
+						catch(Exception e){e.printStackTrace();}
+					}
+					if(huc!=null){huc.disconnect();}
+				}
+			}
+		}).start();
+	}
+	protected void useOkHttpClient(final String url)
+	{
+		new Thread(new Runnable()
+		{
+			@Override
+			public void run()
+			{
+				try
+				{
+					OkHttpClient ohc=new OkHttpClient();
+					Request request=new Request.Builder()
+						.url(url)
+						.build();
+					Response response=ohc.newCall(request).execute();
+					String shuju=response.body().string();
+					upDateTextView(shuju);
+				}
+				catch(Exception e){e.printStackTrace();}
+			}
+		}).start();
 	}
 	protected void upDateTextView(final String textView)
 	{
