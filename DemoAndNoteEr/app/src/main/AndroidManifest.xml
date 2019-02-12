@@ -6,6 +6,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+		<activity android:name=".DuQuLianXiRenAc"android:label="DuQuLianXiRenAc类的布局"android:launchMode="singleTask"/>
 		<activity android:name=".ShowInstalledAc"android:label="ShowInstalledAc类的布局"android:launchMode="singleTask"/>
 		<activity android:name=".WebViewDemoAc"android:label="WebViewDemoAc类的布局"android:launchMode="singleTask"/>
 		<activity android:name=".ServerRequestAc"android:label="ServerRequestAc类的布局"android:launchMode="singleTask"/>
@@ -36,7 +37,8 @@
 		</service>
 		<service android:name=".XFCService"android:label="悬浮窗服务"/>
     </application>
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
 </manifest>

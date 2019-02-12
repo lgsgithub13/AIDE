@@ -16,6 +16,11 @@
 		android:theme="@style/AppTheme">
 
 		<activity
+			android:name=".DuQuLianXiRenAc"
+			android:label="DuQuLianXiRenAc类的布局"
+			android:launchMode="singleTask"/>
+
+		<activity
 			android:name=".ShowInstalledAc"
 			android:label="ShowInstalledAc类的布局"
 			android:launchMode="singleTask"/>
@@ -104,6 +109,9 @@
 
 	<uses-permission
 		android:name="android.permission.INTERNET"/>
+
+	<uses-permission
+		android:name="android.permission.READ_CONTACTS"/>
 
 </manifest>
 

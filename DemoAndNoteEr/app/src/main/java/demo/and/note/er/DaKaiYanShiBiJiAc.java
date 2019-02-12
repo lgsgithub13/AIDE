@@ -29,6 +29,9 @@ public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemCli
 		list.add("通知栏示例演示-190131");
 		list.add("向服务器请求数据方式-190131");
 		list.add("显示已安装全部应用-190212");
+		list.add("安卓四大组件↓↓");
+		list.add("(内容提供器)读取系统通讯录-190212");
+		list.add("安卓四大组件↑↑");
 	}
 	@Override
 	public void onItemClick(AdapterView<?> p1, View p2, int p3, long p4)
@@ -60,6 +63,10 @@ public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemCli
 			case "显示已安装全部应用-190212":
 				Intent iiii=new Intent(DaKaiYanShiBiJiAc.this,ShowInstalledAc.class);
 				startActivity(iiii);
+				break;
+			case "(内容提供器)读取系统通讯录-190212":
+				Intent iiiii=new Intent(DaKaiYanShiBiJiAc.this,DuQuLianXiRenAc.class);
+				startActivity(iiiii);
 				break;
 		}
 	}
