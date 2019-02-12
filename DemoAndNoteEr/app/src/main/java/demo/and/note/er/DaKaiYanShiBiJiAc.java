@@ -28,6 +28,7 @@ public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemCli
 		list.add("一个简单的数据库-190129");
 		list.add("通知栏示例演示-190131");
 		list.add("向服务器请求数据方式-190131");
+		list.add("显示已安装全部应用-190212");
 	}
 	@Override
 	public void onItemClick(AdapterView<?> p1, View p2, int p3, long p4)
@@ -55,6 +56,10 @@ public class DaKaiYanShiBiJiAc extends Activity implements AdapterView.OnItemCli
 			case "向服务器请求数据方式-190131":
 				Intent iii=new Intent(DaKaiYanShiBiJiAc.this,ServerRequestAc.class);
 				startActivity(iii);
+				break;
+			case "显示已安装全部应用-190212":
+				Intent iiii=new Intent(DaKaiYanShiBiJiAc.this,ShowInstalledAc.class);
+				startActivity(iiii);
 				break;
 		}
 	}
